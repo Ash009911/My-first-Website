@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- Css -->
+  <style>
+    /* Adding color to body */
+body {
+      background-color: #FAF3E9; /* Warm white color */
+    }
+    
+    /* Style for navbar-brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #142C49;
+    font-weight: 1000;
+    padding-left: 10px;
+  }
+
+  /* Style for login button */
+  .login-btn {
+      
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /*Style for Search button*/
+  .Search-btn{
+      margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /* Add media query for smaller screens */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /*navbar list's Anchor tag style*/
+  .navbar-nav li a{
+      font-weight: 1000;
+      margin-left: 10px;
+  }
+
+      /*Label tag*/
+      label {
+       font-weight: bold;
+  }
+
+  /* Style for form input fields */
+  /* .form-control {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  /* Style for invalid input */
+  /* .form-control:invalid {
+      border-color: #dc3545;
+  } */
+
+  /* Style for valid input */
+  /* .form-control:valid {
+      border-color: #28a745;
+  } */
+
+  /* Style for submit button */ 
+  .btn-primary {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  /* Style for submit button on hover */
+   .btn-primary:hover {
+      background-color: #0056b3;
+  }
+
+  /* Style for all input boxes */
+  .custom-input {
+    width: calc(50% - 16px); 
+    padding: 20px 8px; 
+    font-size: 14px; 
+    border: 2px solid #ced4da; 
+    border-radius: 12px;
+    transition: all 0.3s ease; 
+  }
+
+  .custom-input:focus {
+    padding-top: 14px; /* Adjust padding on focus to move placeholder up */
+  }
+
+  .custom-input:focus::placeholder {
+    transform: translateY(-70%); /* Slide placeholder upwards */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  </style>
+
+
+</head>
+<body>
+
+    <!-- Navigattion bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#DAAE7D;">
+      <a class="navbar-brand" href="Swashetna.html" style="color: #D41620;"><img src="Logo.jpeg" width="40" height="35" alt="Img" style="margin-top: -5px; margin-left: 5px;margin-right: 5px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto">
+          <li class="nav-item active">
+          <a class="nav-link" href="AboutUs.html">About Us<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#Services">Our Services</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Career.html">Career</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact Us</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 Search-btn" type="submit"><b>Search</b></button>
+          </form>
+      </div>
+      </nav>
+    
+<!-- End of navigation bar -->
+
+<!-- jQuery and Bootstrap Bundle (includes Popper) for navigation bar -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+<div class="container mt-5">
+    <div class="row justify-content-end">
+      <div class="col-md-6 text-center">
+        <h2>Personal Habits Form</h2>
+        <form>
+          <!-- Exercise and Food -->
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Exercise:</label>
+              <div>
+                <input type="radio" id="noExercise" name="exercise" value="No Exercise" required>
+                <label for="noExercise">No Exercise</label>
+              </div>
+              <div>
+                <input type="radio" id="1Hour" name="exercise" value="1 Hour per week">
+                <label for="1Hour">1 Hour per week</label>
+              </div>
+              <div>
+                <input type="radio" id="2Hours" name="exercise" value="2 Hours per week">
+                <label for="2Hours">2 Hours per week</label>
+              </div>
+              <div>
+                <input type="radio" id="7Hours" name="exercise" value="7 Hours per week">
+                <label for="7Hours">7 Hours per week</label>
+              </div>
+              <div>
+                <input type="radio" id="moreThan7Hours" name="exercise" value="More than 7 Hours">
+                <label for="moreThan7Hours">More than 7 Hours</label>
+              </div>
+            </div>
+            <div class="form-group col">
+              <label>Food:</label>
+              <div>
+                <input type="radio" id="vegan" name="food" value="Vegan" required>
+                <label for="vegan">Vegan</label>
+              </div>
+              <div>
+                <input type="radio" id="vegetarian" name="food" value="Vegetarian">
+                <label for="vegetarian">Vegetarian</label>
+              </div>
+              <div>
+                <input type="radio" id="eggitarian" name="food" value="Eggitarian">
+                <label for="eggitarian">Eggitarian</label>
+              </div>
+              <div>
+                <input type="radio" id="nonVegetarian" name="food" value="Non Vegetarian">
+                <label for="nonVegetarian">Non Vegetarian</label>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Drinks and Intoxications -->
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Drinks:</label>
+              <div>
+                <input type="radio" id="nonAlcoholic" name="drinks" value="Non Alcoholic" required>
+                <label for="nonAlcoholic">Non Alcoholic</label>
+              </div>
+              <div>
+                <input type="radio" id="occasionalAlcoholic" name="drinks" value="Occasional Alcoholic">
+                <label for="occasionalAlcoholic">Occasional Alcoholic</label>
+              </div>
+              <div>
+                <input type="radio" id="alcoholic" name="drinks" value="Alcoholic">
+                <label for="alcoholic">Alcoholic</label>
+              </div>  
+            </div>
+            <div class="form-group col">
+              <label>Intoxications:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="intoxications" id="non" value="Non" required>
+                <label class="form-check-label" for="non">Non</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="intoxications" id="smoker" value="Smoker">
+                <label class="form-check-label" for="smoker">Smoker</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="intoxications" id="drugs" value="Drugs">
+                <label class="form-check-label" for="drugs">Drugs</label>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Hobbies -->
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="hobbies">Hobbies:</label>
+              <input type="text" class="custom-input" id="hobbies" name="hobbies" required>
+            </div>
+          </div>
+  
+          <!-- Likings -->
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="likings">Likings:</label>
+              <input type="text" class="custom-input" id="likings" name="likings" required>
+            </div>
+          </div>
+  
+          <!-- Disliking -->
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="disliking">Disliking:</label>
+              <input type="text" class="custom-input" id="disliking" name="disliking" required>
+            </div>
+          </div>
+  
+          <!-- Life Goal -->
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="lifeGoal">Life Goal (300 words):</label>
+              <textarea class="custom-input" id="lifeGoal" name="lifeGoal" rows="5" required></textarea>
+            </div>
+          </div>
+  
+          <button type="button" class="btn btn-primary" onclick="if (validateForm()) window.location.href = 'Form-6.html';">Next</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+        // Validate Exercise
+        var exercise = document.querySelector('input[name="exercise"]:checked');
+        if (!exercise) {
+            alert("Please select your exercise routine.");
+            return false;
+        }
+
+        // Validate Food
+        var food = document.querySelector('input[name="food"]:checked');
+        if (!food) {
+            alert("Please select your food preference.");
+            return false;
+        }
+
+        // Validate Drinks
+        var drinks = document.querySelector('input[name="drinks"]:checked');
+        if (!drinks) {
+            alert("Please select your drink preference.");
+            return false;
+        }
+
+        // Validate Intoxications
+        var intoxications = document.querySelector('input[name="intoxications"]:checked');
+        if (!intoxications) {
+            alert("Please select your intoxication status.");
+            return false;
+        }
+
+        // Validate Hobbies
+        var hobbies = document.getElementById("hobbies").value.trim();
+        if (hobbies === "") {
+            alert("Please enter your hobbies.");
+            return false;
+        }
+
+        // Validate Likings
+        var likings = document.getElementById("likings").value.trim();
+        if (likings === "") {
+            alert("Please enter your likings.");
+            return false;
+        }
+
+        // Validate Disliking
+        var disliking = document.getElementById("disliking").value.trim();
+        if (disliking === "") {
+            alert("Please enter your disliking.");
+            return false;
+        }
+
+        // Validate Life Goal
+        var lifeGoal = document.getElementById("lifeGoal").value.trim();
+        if (lifeGoal === "") {
+            alert("Please enter your life goal.");
+            return false;
+        }
+
+        // If all validations pass, return true
+        return true;
+    }
+</script>
+  
+
+
+  </body>
+</html>

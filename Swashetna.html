@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swasthyachetna</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- Css -->
+  <style>
+    /* Adding color to body */
+body {
+      background-color: #FAF3E9; /* Warm white color */
+    }
+    
+    /* Style for navbar-brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #142C49;
+    font-weight: 1000;
+    padding-left: 10px;
+  }
+
+  /* Style for login button */
+  .login-btn {
+      
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /*Style for Search button*/
+  .Search-btn{
+      margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /* Add media query for smaller screens */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /*navbar list's Anchor tag style*/
+  .navbar-nav li a{
+      font-weight: 700;
+      margin-left: 10px;
+  }
+
+      /*Label tag*/
+      label {
+      display: none;
+  }
+
+  /* Style for form input fields */
+  /* .form-control {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  /* Style for invalid input */
+  /* .form-control:invalid {
+      border-color: #dc3545;
+  } */
+
+  /* Style for valid input */
+  /* .form-control:valid {
+      border-color: #28a745;
+  } */ 
+
+  /* Style for submit button */ 
+  .btn-primary {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  /* Style for submit button on hover */
+   .btn-primary:hover {
+      background-color: #0056b3;
+  }
+
+  /* For image scroller */
+  .carousel-item img {
+      height: 390px;
+      width: 100%;
+      object-fit: cover;
+      /* transition: opacity 0.05s ease-in-out; */
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1s;
+      opacity: 1;
+    }
+    
+    .carousel-item.active {
+      opacity: 1;
+    }
+
+    .dropdown-menu {
+      min-width: 200px;
+    }
+    .btn-bold {
+      font-weight: 700;
+    }
+
+
+
+  </style>
+  
+
+</head>
+<body>
+
+    <!-- Navigattion bar -->
+    <!-- <script type="module" src="header.js"></script>
+
+    <my_header></my_header> -->
+    <!-- <script>
+      // Function to include the header
+      function includeHeader() {
+          fetch('header.html')
+              .then(response => response.text())
+              .then(html => {
+                  document.querySelector('header').innerHTML = html;
+              });
+      }
+      // Call the function to include the header
+      includeHeader();
+  </script>
+  // Header container
+  <header></header> -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#DAAE7D;">
+    <a class="navbar-brand" href="Swashetna.html" style="color: #D41620;"><img src="Logo.jpeg" width="40" height="35" alt="Img" style="margin-top: -5px; margin-left: 5px;margin-right: 5px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="AboutUs.html">About Us<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn btn-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: -11px;margin-right: -10px;">
+              Our Services
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="Education.html">Education</a>
+              <a class="dropdown-item" href="Healthcare.html">Healthcare</a>
+              <a class="dropdown-item" href="Healthcare_Financing.html">Health financing</a>
+              <a class="dropdown-item" href="Events.html">Events</a>
+              <a class="dropdown-item" href="Markiting_Place.html">Marketing Place</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="Career.html">Career</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="Blog.html">Blogs</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="Contact.html">Contact Us</a>
+        </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 Search-btn" type="submit"><b>Search</b></button>
+        </form>
+    <button class="btn btn-outline my-2 my-sm-0 login-btn" type="submit" onclick="window.location.href = 'Login.html';"><b>Login</b></button>
+    </div>
+    </nav>
+    
+<!-- End of navigation bar -->
+
+<!-- jQuery and Bootstrap Bundle (includes Popper) for navigation bar -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+<div class="container-fluid">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-inner" data-bs-interval="50">
+        <div class="carousel-item active">
+          <img src="Healthcare.jpeg" class="rounded mx-auto d-block" alt="Swasthyachetna">
+        </div>
+        <div class="carousel-item">
+          <img src="Education.jpeg" class="rounded mx-auto d-block" alt="Swasthyachetna">
+        </div>
+        <div class="carousel-item">
+          <img src="Events.jpeg" class="rounded mx-auto d-block" alt="Swasthyachetna">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row mb-2">
+        <h2 class="display-6 text-center" style="font-size: 50px;" id="Services"><b>Our Services</b></h2>
+         <div class="col mb-2 mb-sm-0"> 
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Education</h5>
+              <p class="card-text">Quality Education that helps you grow and achieve different heights</p>
+              <button class="btn btn-outline my-2 my-sm-0 login-btn" style="margin-left: -10px;" type="submit" onclick="window.location.href = 'Education.html';"><b>Explore-></b></button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-2 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Healthcare</h5>
+              <p class="card-text">Care to see what your body needs to be always healthy</p>
+              <button class="btn btn-outline my-2 my-sm-0 login-btn" style="margin-left: -10px;" type="submit" onclick="window.location.href = 'Healthcare.html';"><b>Explore-></b></button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-2 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Healthcare Financing</h5>
+              <p class="card-text">Fianace your Hosptial bills in minute</p>
+              <button class="btn btn-outline my-2 my-sm-0 login-btn" style="margin-left: -10px;" type="submit" onclick="window.location.href = 'Healthcare_Financing.html';"><b>Explore-></b></button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-2 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Events</h5>
+              <p class="card-text">Hey check out some great events we are organizing</p>
+              <button class="btn btn-outline my-2 my-sm-0 login-btn" style="margin-left: -10px;" type="submit" onclick="window.location.href = 'Events.html';"><b>Explore-></b></button>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-2 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Marketing Place</h5>
+              <p class="card-text">Do some shopping for your daily needs</p>
+              <button class="btn btn-outline my-2 my-sm-0 login-btn" style="margin-left: -10px;" type="submit" onclick="window.location.href = 'Markiting_Place.html';"><b>Explore-></b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <footer class="text-secondary ">
+      <div class="d-grid gap-2 d-sm-flex justify-content-center bg-dark">
+      <div>
+        <!-- <h1 class="display-5 fw-bold" style="color: rgb(97, 16, 16);text-align: center;"></h1> -->
+        
+          
+            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold mt-3 mb-3"><a href="AboutUs.html">Find out more!</a></button>
+            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold mt-3 mb-3"><a href="Contact.html">Get in Touch</a></button>
+          </div>
+        </div>
+    </footer>
+
+</body>
+</html>

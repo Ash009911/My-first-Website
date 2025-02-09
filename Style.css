@@ -1,0 +1,98 @@
+/* Adding color to body */
+body {
+    background-color: #f5f5dc; /* Warm white color */
+  }
+  
+  /* Style for navbar-brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #142C49;
+    font-weight: 1000;
+    padding-left: 10px;
+  }
+
+  /* Style for login button */
+  .login-btn {
+      
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /*Style for Search button*/
+  .Search-btn{
+      margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /* Add media query for smaller screens */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /*navbar list's Anchor tag style*/
+  .navbar-nav li a{
+      font-weight: 1000;
+      margin-left: 10px;
+  }
+
+      /*Label tag*/
+      label {
+      display: none;
+  }
+
+  /* Style for form input fields */
+  .form-control {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  /* Style for invalid input */
+  .form-control:invalid {
+      border-color: #dc3545;
+  }
+
+  /* Style for valid input */
+  .form-control:valid {
+      border-color: #28a745;
+  }
+
+  /* Style for submit button */ 
+  .btn-primary {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  /* Style for submit button on hover */
+   .btn-primary:hover {
+      background-color: #0056b3;
+  }
+
+  /* Style for all input boxes */
+  .custom-input {
+    width: calc(50% - 16px); 
+    padding: 20px 8px; 
+    font-size: 14px; 
+    border: 2px solid #ced4da; 
+    border-radius: 12px;
+    transition: all 0.3s ease; 
+  }
+
+  .custom-input:focus {
+    padding-top: 14px; /* Adjust padding on focus to move placeholder up */
+  }
+
+  .custom-input:focus::placeholder {
+    transform: translateY(-70%); /* Slide placeholder upwards */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }

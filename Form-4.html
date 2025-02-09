@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- Css -->
+  <style>
+    /* Adding color to body */
+body {
+      background-color: #FAF3E9; /* Warm white color */
+    }
+    
+    /* Style for navbar-brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #142C49;
+    font-weight: 1000;
+    padding-left: 10px;
+  }
+
+  /* Style for login button */
+  .login-btn {
+      
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /*Style for Search button*/
+  .Search-btn{
+      margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  /* Add media query for smaller screens */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /*navbar list's Anchor tag style*/
+  .navbar-nav li a{
+      font-weight: 1000;
+      margin-left: 10px;
+  }
+
+      /*Label tag*/
+      label {
+      display: none;
+  }
+
+  /* Style for form input fields */
+  /* .form-control {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  /* Style for invalid input */
+  /* .form-control:invalid {
+      border-color: #dc3545;
+  } */
+
+  /* Style for valid input */
+  /* .form-control:valid {
+      border-color: #28a745;
+  } */
+
+  /* Style for submit button */ 
+  .btn-primary {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  /* Style for submit button on hover */
+   .btn-primary:hover {
+      background-color: #0056b3;
+  }
+
+  /* Style for all input boxes */
+  .custom-input {
+    width: calc(50% - 16px); 
+    padding: 20px 8px; 
+    font-size: 14px; 
+    border: 2px solid #ced4da; 
+    border-radius: 12px;
+    transition: all 0.3s ease; 
+  }
+
+  .custom-input:focus {
+    padding-top: 14px; /* Adjust padding on focus to move placeholder up */
+  }
+
+  .custom-input:focus::placeholder {
+    transform: translateY(-70%); /* Slide placeholder upwards */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  </style>
+
+
+</head>
+<body>
+
+    <!-- Navigattion bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#DAAE7D;">
+      <a class="navbar-brand" href="Swashetna.html" style="color: #D41620;"><img src="Logo.jpeg" width="40" height="35" alt="Img" style="margin-top: -5px; margin-left: 5px;margin-right: 5px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto">
+          <li class="nav-item active">
+          <a class="nav-link" href="AboutUs.html">About Us<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#Services">Our Services</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Career.html">Career</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact Us</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 Search-btn" type="submit"><b>Search</b></button>
+          </form>
+      </div>
+      </nav>
+    
+<!-- End of navigation bar -->
+
+<!-- jQuery and Bootstrap Bundle (includes Popper) for navigation bar -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-end">
+      <div class="col-md-6 text-center">
+        <h2>Health Insurance Form</h2>
+        <form id="healthInsuranceForm" onsubmit="return validateForm()">
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="annualIncome">Annual Income:</label>
+              <input type="text" class="custom-input" id="annualIncome" placeholder="Enter annual income" name="annualIncome">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label style="display: contents;">Medical Insurance:</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="medicalInsurance" id="medicalInsuranceYes" value="Yes" required>
+                <label class="form-check-label" for="medicalInsuranceYes" style="display: contents;">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="medicalInsurance" id="medicalInsuranceNo" value="No">
+                <label class="form-check-label" for="medicalInsuranceNo" style="display: contents;">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="healthInsuranceCompany">Health Insurance Company Name:</label>
+              <input type="text" class="custom-input" id="healthInsuranceCompany" placeholder="Enter health insurance company" name="healthInsuranceCompany">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="sumInsure" class="form-label">Sum Insure:</label>
+              <input type="text" class="custom-input" id="sumInsure" placeholder="Enter sum insure" name="sumInsure" style="width: 300px;">
+            </div>
+            <div class="form-group col">
+              <label for="policyName" class="form-label">Policy Name:</label>
+              <input type="text" class="custom-input" id="policyName" placeholder="Enter policy name" name="policyName" style="width: 300px;">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="policyStartDate" class="form-label" style="display: inline-flex;">Policy Start Date:</label>
+              <input type="date" class="custom-input" id="policyStartDate" name="policyStartDate" style="width: 300px;">
+            </div>
+            <div class="form-group col">
+              <label for="policyEndDate" class="form-label" style="display: inline-flex;">Policy End Date:</label>
+              <input type="date" class="custom-input" id="policyEndDate" name="policyEndDate" style="width: 300px;">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="premiumAmount">Premium Amount:</label>
+              <input type="text" class="custom-input" id="premiumAmount" placeholder="Enter premium amount" name="premiumAmount">
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary" onclick= " validateForm()">Next</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    
+
+
+  <script>
+    function validateForm() {
+      var annualIncome = document.getElementById('annualIncome').value;
+      var medicalInsurance = document.querySelector('input[name="medicalInsurance"]:checked');
+      var healthInsuranceCompany = document.getElementById('healthInsuranceCompany').value;
+      var sumInsure = document.getElementById('sumInsure').value;
+      var policyName = document.getElementById('policyName').value;
+      var policyStartDate = document.getElementById('policyStartDate').value;
+      var policyEndDate = document.getElementById('policyEndDate').value;
+      var premiumAmount = document.getElementById('premiumAmount').value;
+  
+      // Check if any mandatory field is empty
+      if (annualIncome === '' || medicalInsurance === null || healthInsuranceCompany === '' || sumInsure === '' || policyName === '' || policyStartDate === '' || policyEndDate === '' || premiumAmount === '') {
+        alert('Please fill in all mandatory fields.');
+        return false; // Prevent form submission
+      }
+  
+      // You can add more advanced validation here if needed
+  
+      // Redirect to the next page
+      window.location.href = "Form-5.html";
+  
+      // Return false to prevent form submission
+      return false;
+    }
+
+  
+  // Function to restrict input to integer values
+  function restrictToInteger(input) {
+    input.addEventListener('input', function() {
+      // Remove any non-numeric characters from the input value
+      this.value = this.value.replace(/\D/g, '');
+    });
+  }
+
+  // Call the restrictToInteger function for the specified fields
+  window.onload = function() {
+    var annualIncomeInput = document.getElementById('annualIncome');
+    var sumInsureInput = document.getElementById('sumInsure');
+    var premiumAmountInput = document.getElementById('premiumAmount');
+
+    restrictToInteger(annualIncomeInput);
+    restrictToInteger(sumInsureInput);
+    restrictToInteger(premiumAmountInput);
+  }
+
+  </script>
+  
+
+</body>
+</html>
